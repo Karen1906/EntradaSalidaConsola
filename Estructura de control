@@ -1,0 +1,124 @@
+package Nayely.com;
+
+public class EstructurasDeControl {
+
+	
+        //Condicionales
+	
+    public void condicionales() {
+       
+    	//if simple
+        int edad = 21;
+        if (edad >= 21)  {
+            System.out.println("Eres mayor de edad");
+        }
+
+        //if-else
+        int edad2 =13;
+        if (edad2 >= 18) {
+            System.out.println("Eres mayor de edad");
+        } else {
+            System.out.println("Eres menor de edad");
+        }
+
+        //if - else - if 
+        int nota = 70;
+        if (nota >= 90) {
+            System.out.println("Sobresaliente");
+        } else if (nota >= 80) {
+            System.out.println("Notable");
+        } else if (nota >= 70) {
+            System.out.println("Aprobado");
+        } else {
+            System.out.println("Reprobado");
+        }
+
+        //Operador ternario
+        int edad3 = 21;
+        String esMayor = (edad3 >= 18) ? "Mayor de edad" : "Menor de edad";
+        System.out.println(esMayor);
+
+         
+        //switch
+        
+        int diaSemana = 4;
+        switch (diaSemana) {
+            case 1:
+                System.out.println(" Lunes ");
+                break;
+            case 2:
+                System.out.println(" Martes ");
+                break;
+            case 3:
+                System.out.println(" Miercoles ");
+                break;
+            case 4:
+                System.out.println(" Jueves ");
+                break;
+            case 5:
+                System.out.println(" Viernes ");
+                break;
+            case 6:
+                System.out.println(" Sabado ");
+                break;
+            case 7:
+                System.out.println(" Domingo ");
+                break;
+            default:
+                System.out.println("Dia no valido ");
+        }
+    
+    	//ESTACIONES DEL AÑO
+        int estacionAnio = 2;
+        switch (estacionAnio) {
+ 			case 1:
+ 				System.out.println(" Primavera ");
+ 				break;
+ 			case 2:
+ 				System.out.println(" Verano  ");
+ 				break;
+ 			case 3:
+ 				System.out.println(" Otoño ");
+ 				break;
+ 			case 4:
+ 				System.out.println(" Invierno ");
+ 				break;
+        }
+    }
+
+    	//Ciclos
+    
+    public void ciclos() {
+        System.out.println("::::::::::::::::::::::::::::::::::::::BUCLES");
+
+        //for
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("Numero: " + i);
+        }
+
+        //for each        
+        String[] frutas = {"Manzana", "Platano", "Pera", "Sandia"};
+        for (String fruta : frutas) {
+            System.out.println(fruta);
+        }
+
+        //while        
+        int contador = 1;
+        while (contador <= 9) {
+            System.out.println("Contador: " + contador);
+            contador++;
+        }
+        //do-while        
+        int numero = 1;
+        do {
+            System.out.println("Numero: " + numero);
+            numero++;
+        } while (numero <= 9);
+    }
+
+    public static void main(String[] args) {
+        EstructurasDeControl esc = new EstructurasDeControl();
+        esc.condicionales();
+        esc.ciclos();
+    }
+}
