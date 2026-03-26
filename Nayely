@@ -1,0 +1,67 @@
+package nayely.com;
+
+import java.util.Scanner;
+
+public class EntradaSalidaConsola {
+
+    public void ejemploScanner() {
+        Scanner scanner = new Scanner(System.in);
+
+        //Pedir datos de tipo String
+        System.out.print("Por favor ingrese su nombre: ");
+        String nombre = scanner.nextLine();
+        //Pedir datos de tipo int
+        System.out.print("Por favor ingrese su edad: ");
+        int edad = scanner.nextInt();
+        //Pedir datoss de tipo double
+        System.out.print("Por favor ingrese un precio: ");
+        double precio = scanner.nextDouble();
+        //Pedir datos de tipo boolean
+        System.out.print("Por favor ingresa una respuesta: ");
+        boolean respuesta = scanner.nextBoolean();
+
+        System.out.println("Datos Ingresados");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Precio: " + precio);
+        System.out.println("Respuesta: " + respuesta);
+
+        scanner.close(); //Cerrar Instancia
+    }
+
+    
+    public void ejemplosSalidaTexto() {
+        //Imprime texto  añade un salto de línea (println)
+        System.out.println("Hola, Nayely");
+
+        //Imprime un texto sin añadir un salto de línea (print)
+        System.out.print("Hola a todos");
+
+        //Imprime un texto formateado similar a printf de python
+       
+        //String
+        System.out.printf("Hola, %s", "Nayely");
+        //int
+        System.out.printf("El numero es: %d", 22 );
+        //double
+        System.out.printf("El precio es: %.2f",57.52 );
+        //double redondeado
+        System.out.printf("El valor de PI es: %.2f", 3.1416 );
+        //boolean
+        System.out.printf("El valor es: %b", true);
+        //Salto de linea
+        System.out.printf("linea 1 %n linea 2");
+        //Imprimir varias variables en un printf
+        String nombre = "Nayely";
+        int edad = 21;
+        double sueldo = 6000;
+        // salto de linea
+        System.out.printf("Mi nombre es %s tengo: %d años y voy a ganar %.2f%n", nombre, edad, sueldo);
+    }
+
+    public static void main(String[] args) {
+        EntradaSalidaConsola es = new EntradaSalidaConsola();
+        //es.ejemploScanner();
+        es.ejemplosSalidaTexto();
+    }
+}
