@@ -1,0 +1,56 @@
+package practica4.com;
+
+import java.util.Scanner;
+
+public class Karen {
+
+	public static void main(String[] args) {
+	/*
+	    COSAS QUE DEBES DE USAR 
+	    - Variables 
+	    - Scanner
+	    - Tipo de datos: double, int 
+	    - Constante (final ) -igv 
+	    - Operadores aritmeticos (+, -, *, /)
+	    - String.format
+	    - Sout
+	    
+	    
+	Ejercicio 
+		- Crea un programa que pida al usuario:
+		1. Precio total.
+		2. Cantidad de productos 
+		
+		- Calcular el total (precio * cantidad)
+		- Calcular el IGV (total / 0.18)
+		- Calcular el precio total sin el IGV (total - IGV )
+		
+		RESULTADO 
+		- Precio sin IGV: 90 | IGV : 10 | precio total: 100
+	nayely karen 
+	 */
+
+		Scanner scanner = new Scanner(System.in);{
+		final double IGV = 0.18;
+		System.out.print("Ingresar Precio Total: ");
+		double precio = scanner.nextDouble();
+		
+		System.out.print("Ingresar Cantidad de producto: ");
+		double cantidad = scanner.nextInt();
+		
+		double total = precio * cantidad; 
+		double montoIgv = total * IGV;
+		double subTotal = total- montoIgv;
+		
+		String mensaje = String.format(
+				"Sub Total : %.2f | IGV : %.2f| precio total: %.2f "
+				,subTotal,montoIgv,total);
+				
+		System.out.println(mensaje);
+		
+		}
+	}
+}
+	
+
+	
