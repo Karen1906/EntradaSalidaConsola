@@ -1,0 +1,42 @@
+package karen.com;
+
+import java.util.Scanner;
+
+public class karen {
+
+	public static void main(String[] args) {
+		/*
+		COSAS QUE DEBES USAR 
+		- Variables 
+		- Scanner
+		- Tipos de datos: int 
+		- Operadores Aritmeticos: - 
+		- String.forma
+		- sout 
+		
+		EJERCICIO
+		-Crear un programa que pida al usuario:
+		1. Su año de nacimiento 
+		2. el año actual 
+		
+		el programa debe calcular cuatos años tienes actualmente  
+		
+		RESULTADO 
+		-"Ud. tiene: 30 años "		 
+		 */
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Ingrese su Año de Nacimiento: ");
+		int anionacimiento = scanner.nextInt ();
+		System.out.print("Ingrese su Año Actual: ");
+		int anioactual = scanner.nextInt ();
+		
+		int edad = anioactual - anionacimiento;
+		System.out.println(String.format("Ud. Tiene: %d años", edad ));
+		System.out.println("Nayely Salas");
+		
+		
+	}
+
+}
