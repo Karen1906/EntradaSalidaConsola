@@ -1,0 +1,57 @@
+package karen.com;
+import java.util.Scanner;
+
+public class practica2 {
+
+	public static void main(String[] args) {
+		/*
+		# COSAS QUE DEBES DE USAR 
+		- Variable 
+		- Scaner 
+		- tipo de dato double 
+		- Operadores Aritmeticos (+ , /)
+		- sout 
+		# EJERCICO 
+		Crear un programa que pida al usuario 
+		3 notas. 
+		
+		El prograba debe calcular el rpomedio final. 
+		
+		#RESULTADO 
+		"El final es:"
+		
+		 */
+		
+			 Scanner scanner = new Scanner(System.in);
+			
+			 System.out.print(" Ingrese la Primera nota: ");
+			 double nota1 = scanner.nextDouble();
+			 System.out.print(" Ingrese la Segunda nota:  ");
+			 double nota2 = scanner.nextDouble();
+			 System.out.print(" Ingrese la Tercera nota  ");
+			 double nota3 = scanner.nextDouble();
+			 
+			 double respuesta = (nota1 + nota2 + nota3)/3 ;
+			 
+			 System.out.print("Nayely Salas");
+			 System.out.println("El promedio final es: "+ respuesta);
+			 
+			 
+			int edad = 21;
+			String nombre = "Karen";
+			double sueldo = 3000; 
+			
+			String mensaje = String.format(
+					"El empleado %s de edad %d desea ganar %f dolares."
+					,
+					nombre, edad, sueldo 
+					);
+			System.out.println(mensaje);	 
+		
+			
+			 
+		}
+		
+		
+	}
+	
